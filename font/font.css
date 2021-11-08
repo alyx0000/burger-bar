@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Mochiy-Pop-One';
+    src: url('MochiyPopOne-Regular.eot');
+    src: url('MochiyPopOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MochiyPopOne-Regular.woff2') format('woff2'),
+        url('MochiyPopOne-Regular.woff') format('woff'),
+        url('MochiyPopOne-Regular.svg#MochiyPopOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
