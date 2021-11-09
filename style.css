@@ -6,8 +6,9 @@ body{
     justify-content: space-between;
     align-items: center;
     max-width: 1700px;
-    width: 90%;
-    margin: 1em auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
     position: relative;
 }
 .logo{
@@ -28,7 +29,7 @@ body{
 /* burger bar */
 .toggle-bar{
     width: 1.7rem;
-    height: 23px;
+    height: 25px;
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
@@ -41,47 +42,21 @@ body{
 	transition: 0.15s ease-out;
 }
 .toggle span:nth-child(1){
-    transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+    transform: rotate(-45deg) translate(-6px, 3px);
 }
 .toggle span:nth-child(2){
     display: none;
 }
 .toggle span:nth-child(3){
-    transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
-}
-
-
-/* Responsive */
-@media (max-width: 768px){
-    .nav-bar{
-        display: none;
-    }
-    .nav-bar.toggle{
-        display: block;
-    }
-    .toggle-bar{
-        display: flex;
-    }
-    .nav-bar ul{
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        top: 100px;
-        right: 0px;
-    }
-    .nav-bar ul li{
-        margin-top: 1.8rem;
-    }
-    .nav-bar ul a{
-        margin: 0;
-    }
+    transform: rotate(45deg) translate(-6px, -3px);
 }
 
 /* Input Section */
 .input-wrp{
     max-width: 1700px;
-    width: 90%;
-    margin: 100px auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 20px;
 }
 .input-wrp h1{
     font-size: 2rem;
@@ -100,6 +75,10 @@ body{
 }
 .clear-list{
     margin-top: 1.5em;
+}
+.clear-list:hover{
+    cursor: pointer;
+    background-color: #add8e6;
 }
 .button:hover{
     cursor: pointer;
@@ -129,3 +108,37 @@ body{
     color: lightpink;
     cursor: pointer;
 }
+
+/* Responsive */
+@media (max-width: 768px){
+    .header-wrp{
+        background-color: white;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar.toggle{
+        display: block;
+    }
+    .toggle-bar{
+        display: flex;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        width: 100%;
+        height: 100vw;
+        top: 110px;
+        right: 0px;
+        background-color: white;
+        padding-right: 20px;
+    }
+    .nav-bar ul li{
+        margin-top: 1.8rem;
+    }
+    .nav-bar ul a{
+        margin: 0;
+    }
+}
+
