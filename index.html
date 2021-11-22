@@ -4,45 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>burger-bar</title>
-    <script src="https://kit.fontawesome.com/4f696a1e5d.js" crossorigin="anonymous"></script>
+    <title>burger-bar01</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-wrp">
+    <header class="hdr-wrp">
+        <div class="container">
             <a href="#">
                 <img class="logo" src="image/logo.png" alt="logo-image">
             </a>
-            <nav class="nav-bar" id="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Shop</a></li>
-                    <li><a href="index.html">Blog</a></li>
-                    <li><a href="index.html">About us</a></li>
-                    <li><a href="index.html">Contact</a></li>
+            <nav class="header-navigation">
+                <div class="toggle-menu" id="toggleButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-list" id="navigation-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <div class="toggle-bar" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </header>
-    <section>
-        <div class="input-wrp">
-            <h1>Wish☆List</h1>
-            <form action="" class="form-wrp">
-                <input type="text" class="input">
-                <button class="button">Add Item</button>
-            </form>
-            <ul class="ul-list">
-            
-            </ul>
-            <button class="clear-list">Clear list</button>
+    <section class="test">
+        <div class="input-sec">
+            <div class="input-wrp">
+                <h1>Wish☆List</h1>
+                <form action="" class="form-wrp">
+                    <input type="text" class="input">
+                    <button class="button">Add Item</button>
+                </form>
+                <ul class="ul-list">
+                
+                </ul>
+                <button class="clear-list">Clear list</button>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>

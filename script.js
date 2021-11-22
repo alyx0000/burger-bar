@@ -1,12 +1,10 @@
-// Burger bar
-let navigationLinks = document.getElementById('navigation');
-let toggleButton = document.getElementById('burger');
+let burgerButton = document.getElementById('toggleButton');
+let navBar = document.getElementById('navigation-ul');
 
-toggleButton.addEventListener('click', function(){
-    navigationLinks.classList.toggle('toggle');
-    toggleButton.classList.toggle('toggle');
+burgerButton.addEventListener('click', function(){
+    navBar.classList.toggle('toggle');
+    burgerButton.classList.toggle('active');
 })
-
 
 // Input
 let button = document.querySelector('.button');
